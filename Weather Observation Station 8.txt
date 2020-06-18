@@ -25,3 +25,62 @@ WHERE(
      CITY LIKE '%U'
     )
 );
+
+
+
+
+
+
+
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE(
+    CITY REGEXP '^[AEIOU].*[AEIOU]$'
+);
+
+
+
+
+
+
+
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE(
+    LEFT(CITY,1) IN ('A','E','I','O','U')
+    AND
+    RIGHT(CITY,1) IN ('A','E','I','O','U')
+);
+
+
+
+
+
+
+
+
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE(
+    SUBSTR(CITY,1,1) IN ('A','E','I','O','U')
+    AND
+    SUBSTR(CITY,LENGTH(CITY),1) IN ('A','E','I','O','U')
+);
+
+
+
+
+
+
+
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE(
+    CITY REGEXP '^[AEIOU]'
+    AND
+    CITY REGEXP '[AEIOU]$'
+);
