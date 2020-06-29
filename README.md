@@ -16,4 +16,7 @@ Notes:
 9. SUBSTR or SUBSTRING (string, startindex[1 based](if negative start from last n character), length) to find substring
 10. IN to check if some value exists in array.column or not
 11. LEFT or RIGHT (string, length) finds substring from left.right of string
+12. can not mix agreegate and non-agreegate in SELECT
+13. cant use alias in count. use * instead
+14. better use 'tablename.column_name' in join
 
