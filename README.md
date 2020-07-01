@@ -19,4 +19,4 @@ Notes:
 12. can not mix agreegate and non-agreegate in SELECT
 13. cant use alias in count. use * instead
 14. better use 'tablename.column_name' in join
-
+15. Don't forget to use GROUP BY while using aggregate function
